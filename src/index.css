@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #141414;
+  --font-color: #fff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--font-color);
+  max-height: 100vh;
+  max-width: 100vh;
+  font-family: "FixelDisplay-Light";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "FixelDisplay-Light";
+  src: url("./fonts/FixelDisplay-Light.woff2") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "FixelDisplay-Medium";
+  src: url("./fonts/FixelDisplay-Medium.woff2") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "FixelDisplay-SemiBold";
+  src: url("./fonts/FixelDisplay-SemiBold.woff2") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
