@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { ContactForm, Label, Input, Textarea, Button } from "./From.styled";
+import { ContactForm, Input, Button } from "./From.styled";
 import { toast } from "react-toastify";
 
 export const Form = () => {
@@ -25,7 +25,7 @@ export const Form = () => {
   };
   return (
     <>
-      <ContactForm ref={form} onSubmit={sendEmail}>
+      {/* <ContactForm ref={form} onSubmit={sendEmail}>
         <Label>
           Name
           <Input name="user_name" placeholder="Jordan Walke " type="text" />
@@ -41,7 +41,22 @@ export const Form = () => {
         <Label>
           Let`s me know if you want to cooperate
           <Textarea name="message" placeholder="Hello...."></Textarea>
+          <Input name="message" placeholder="Hello...." type="text" />
         </Label>
+        <Button type="submit">Send</Button>
+      </ContactForm> */}
+
+      <ContactForm ref={form} onSubmit={sendEmail}>
+        <Input name="user_name" placeholder="Jordan Walke " type="text" />
+
+        <Input
+          name="user_email"
+          placeholder="JordanWalke@gmail.com"
+          type="email"
+        />
+
+        <Input name="message" placeholder="Hello...." type="text" />
+
         <Button type="submit">Send</Button>
       </ContactForm>
     </>

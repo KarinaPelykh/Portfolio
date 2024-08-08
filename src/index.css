@@ -7,7 +7,7 @@ body {
   background: var(--bg-color);
   color: var(--font-color);
   max-height: 100vh;
-  max-width: 100vh;
+
   font-family: "FixelDisplay-Light";
 }
 h1,
@@ -18,11 +18,13 @@ h5,
 h6,
 ul,
 ol,
-a {
+a,
+p {
   list-style: none;
   padding: 0;
   margin: 0;
   text-decoration: none;
+  color: inherit;
 }
 
 img {

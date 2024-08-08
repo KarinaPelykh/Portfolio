@@ -1,0 +1,40 @@
+[
+  { "id": 1, "item": "../../images/technologes/html-icon.png" },
+  { "id": 2, "item": "../../images/technologes/css-icon.png" },
+  {
+    "id": 3,
+    "item": "../../images/technologes/javascript-programming-language-icon.png"
+  },
+  {
+    "id": 4,
+    "item": "../../images/technologes/react-js-icon.png"
+  },
+  {
+    "id": 5,
+    "item": "../../images/technologes/redux-icon.png"
+  },
+  {
+    "id": 6,
+    "item": "../../images/technologes/typescript-programming-language-icon.png"
+  },
+  {
+    "id": 7,
+    "item": "../../images/technologes/nextjs-icon.png"
+  },
+  {
+    "id": 8,
+    "item": "../../images/technologes/tailwind-css-icon.png"
+  },
+  {
+    "id": 9,
+    "item": "../../images/technologes/visual-studio-code-icon.png"
+  },
+  {
+    "id": 10,
+    "item": "../../images/technologes/github-icon.png"
+  },
+  {
+    "id": 11,
+    "item": "../../images/technologes/figma-icon.png"
+  }
+]
