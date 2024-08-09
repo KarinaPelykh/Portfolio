@@ -16,6 +16,7 @@ export const Section = styled.section`
 
 export const Text = styled.p`
   font-size: 50px;
+  font-family: "GreyQo-Regular";
 `;
 export const Button = styled.button`
   padding: 12px 20px;

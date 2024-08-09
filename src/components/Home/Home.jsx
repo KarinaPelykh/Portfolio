@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import NET from "vanta/dist/vanta.net.min";
+import HALO from "vanta/dist/vanta.HALO.min";
 import { Div, Text, Section, Button } from "./Home.styled";
 import { Container } from "../Container/Container";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,7 @@ export const Home = () => {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        NET({
+        HALO({
           el: myRef.current,
           mouseControls: true,
           touchControls: true,
@@ -38,7 +38,7 @@ export const Home = () => {
         <Section>
           <Text>Hi👋</Text>
           <Text>
-            I&apos;m Karyna Pelykh ✨ <pre>frontend developer👩‍💻</pre>
+            I&apos;m Karyna Pelykh ✨ <pre>frontend developer</pre>
           </Text>
           <Button onClick={handelNavigate}>Go explore</Button>
         </Section>

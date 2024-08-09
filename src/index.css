@@ -7,7 +7,7 @@ body {
   background: var(--bg-color);
   color: var(--font-color);
   max-height: 100vh;
-
+  overflow-x: hidden;
   font-family: "FixelDisplay-Light";
 }
 h1,
@@ -35,19 +35,42 @@ img {
 
 @font-face {
   font-family: "FixelDisplay-Light";
-  src: url("./fonts/FixelDisplay-Light.woff2") format("woff");
+  src: url("./fonts/FixelDisplay-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "FixelDisplay-Medium";
-  src: url("./fonts/FixelDisplay-Medium.woff2") format("woff");
+  src: url("./fonts/FixelDisplay-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "FixelDisplay-SemiBold";
-  src: url("./fonts/FixelDisplay-SemiBold.woff2") format("woff");
+  src: url("./fonts/FixelDisplay-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
+}
+
+@font-face {
+  font-family: "GreyQo-Regular";
+  src: url("./fonts/GreyQo-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fcfcfc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }

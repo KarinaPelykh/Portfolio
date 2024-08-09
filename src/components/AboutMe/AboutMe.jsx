@@ -1,48 +1,69 @@
-// import Swiper from "swiper";
 import {
   Section,
-  Sidebar,
-  // Skills,
-  Languages,
+  SectionDescription,
+  ListLanguages,
+  ListEducation,
+  TextDescription,
   Text,
+  Wrapper,
+  TextName,
   Title,
+  List,
+  Item,
+  ItemLanguages,
+  ItemEducation,
 } from "./AboutMe.styled";
-// import "swiper/css";
-// import "swiper/css/virtual";
-// import { SwiperSlide } from "swiper/react";
-// import technologes from "../../assets/data/technologes";
+
+import { dataHardSkill } from "../../assets/data/technologes";
 export const AboutME = () => {
   return (
-    <Section>
-      <Sidebar>
+    <>
+      <Section>
+        <Wrapper>
+          <Text>hi there, I&lsquo;m </Text>
+          <TextName>Karyna Pelykh</TextName>
+          <img />
+        </Wrapper>
+      </Section>
+      <SectionDescription>
         <Title>About me</Title>
-        <Text>
+        <TextDescription>
           I am a junior Frontend Developer with a passion for creating beautiful
-          and useful applications. I am positive, communicative, and always
-          eager to learn new things. I thrive in collaborative environments and
-          am ready to take on new challenges. Feel free to reach out to me; I am
-          open to new opportunities and excited to become a valuable member of
-          your team.
-        </Text>
-      </Sidebar>
-
-      <Languages>
-        <h2>Languages</h2>
-        <ul>
-          <li>Ukrainian - Native</li>
-          <li>Czech - Intermediate</li>
-          <li>English - Pre-intermediate</li>
-        </ul>
-      </Languages>
-      {/* <Skills>
-        <ul>
-          {technologes.map(({ id, item }) => (
-            <li key={id}>
-              <img src={item} alt="item" />
-            </li>
-          ))}
-        </ul>
-      </Skills> */}
-    </Section>
+          and useful applications and i have been 1.5 year experience in
+          programming. I am positive, communicative, and always eager to learn
+          new things. I thrive in collaborative environments and am ready to
+          take on new challenges. Feel free to reach out to me; I am open to new
+          opportunities and excited to become a valuable member of your team.
+        </TextDescription>
+      </SectionDescription>
+      <Section>
+        <Title> 01 Hard skills</Title>
+        <List>
+          {dataHardSkill.map(({ id, item }) => {
+            return <Item key={id}>{item}</Item>;
+          })}
+        </List>
+      </Section>
+      <Section>
+        <Title> 02 Languages</Title>
+        <ListLanguages>
+          <ItemLanguages>Ukrainian - Native</ItemLanguages>
+          <ItemLanguages>Czech - Intermediate</ItemLanguages>
+          <ItemLanguages>English - Pre-intermediate</ItemLanguages>
+        </ListLanguages>
+      </Section>
+      <Section>
+        <Title> 03 Education</Title>
+        <ListEducation>
+          <ItemEducation>
+            Poltava University Of Economics And Trade Bachelor Computer Science
+            <p>2023</p>
+          </ItemEducation>
+          <ItemEducation>
+            IT School GoIT <p>May 2023 - August 2023</p>
+          </ItemEducation>
+        </ListEducation>
+      </Section>
+    </>
   );
 };
