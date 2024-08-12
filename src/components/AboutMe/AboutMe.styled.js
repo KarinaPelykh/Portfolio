@@ -52,7 +52,6 @@ export const Title = styled.h2`
   margin-bottom: 30px;
   animation: ${title} 500ms linear both;
   animation-timeline: scroll();
-  animation-range: entry 50% cover 30%;
 `;
 
 const hied = keyframes`
