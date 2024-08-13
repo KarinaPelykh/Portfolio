@@ -24,7 +24,8 @@ export const data = [
     linkProject: "https://vocab-builder-dun.vercel.app/",
     linkGithub: "https://github.com/KarinaPelykh/VocabBuilder",
     position: "Developer ",
-    description: "",
+    description:
+      "A tool to help users expand and reinforce their vocabulary through various exercises and quizzes.",
   },
   {
     id: 3,
