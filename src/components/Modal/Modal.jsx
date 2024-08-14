@@ -1,47 +1,38 @@
 import { data } from "../../assets/data/project";
-import { Div, Modal } from "./Modal.styled";
-
+import { Div, Modal, Button, Item, Title } from "./Modal.styled";
 import icon from "../../images/sprite.svg";
+import { SliderImages } from "../SliderImages/SliderImages";
+import { LinkOnNetwork } from "../LinkOnNetwork/LinkOnNetwork";
+
 export const ModalWindow = ({ onClick, open, id }) => {
   return (
     <>
-      {open && (
-        <Modal>
-          <Div>
-            <button onClick={onClick}> close</button>
+      <Modal className={open ? "open" : ""}>
+        <Div>
+          <Button onClick={onClick}>
+            <svg width={24} height={24}>
+              <use xlinkHref={icon + "#close"}></use>
+            </svg>
+          </Button>
+          <ul>
             {data
               .filter((el) => el.id === id)
-              .map(
-                ({
-                  id,
-                  item,
-                  alt,
-                  title,
+              .map(({ id, title, linkProject, linkGithub }) => (
+                <Item key={id}>
+                  <Title>{title}</Title>
 
-                  linkProject,
-                  linkGithub,
-                }) => (
-                  <li key={id}>
-                    <h2>{title}</h2>
-                    <img src={item} alt={alt} />
-                    <div>
-                      <a href={linkProject}>
-                        <svg height={30} width={30}>
-                          <use xlinkHref={icon + "#link"}></use>
-                        </svg>
-                      </a>
-                      <a href={linkGithub}>
-                        <svg height={30} width={30}>
-                          <use xlinkHref={icon + "#github"}></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </li>
-                )
-              )}
-          </Div>
-        </Modal>
-      )}
+                  <SliderImages id={id} />
+                  <LinkOnNetwork
+                    linkProject={linkProject}
+                    linkGithub={linkGithub}
+                    height={30}
+                    width={30}
+                  />
+                </Item>
+              ))}
+          </ul>
+        </Div>
+      </Modal>
     </>
   );
 };

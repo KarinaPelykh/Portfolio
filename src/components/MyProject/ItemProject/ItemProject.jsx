@@ -4,22 +4,21 @@ import {
   Images,
   Text,
   Description,
-  Link,
-  LinkGithub,
   Span,
   Thumb,
-  Svg,
+  Div,
+  TextTechnologies,
 } from "./ItemProject.styled";
-import icon from "../../../images/sprite.svg";
+import { LinkOnNetwork } from "../../LinkOnNetwork/LinkOnNetwork";
 export const ItemProject = ({
   id,
   item,
   alt,
   title,
-
   linkProject,
   linkGithub,
   position,
+  technologies,
   description,
   handelToggle,
 }) => {
@@ -30,20 +29,24 @@ export const ItemProject = ({
         <Thumb>
           <Images src={item} alt={alt} width={550} height={400} />
           <div>
-            <Text>
-              <Span>Position:</Span> {position}
-            </Text>
-            <Description>Description: {description}</Description>
-            <Link href={linkProject}>
-              <Svg height={30} width={30}>
-                <use xlinkHref={icon + "#link"}></use>
-              </Svg>
-            </Link>
-            <LinkGithub href={linkGithub}>
-              <Svg height={30} width={30}>
-                <use xlinkHref={icon + "#github"}></use>
-              </Svg>
-            </LinkGithub>
+            <Description>
+              <Span> Description:</Span> {description}
+            </Description>
+            <TextTechnologies>
+              <Span>Technologies: </Span>
+              {technologies}
+            </TextTechnologies>
+            <Div>
+              <Text>
+                <Span>Position: </Span> {position}
+              </Text>
+              <LinkOnNetwork
+                linkProject={linkProject}
+                linkGithub={linkGithub}
+                height={30}
+                width={30}
+              />
+            </Div>
           </div>
         </Thumb>
       </Item>

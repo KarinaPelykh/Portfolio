@@ -16,25 +16,45 @@ export const Title = styled.h1`
   font-family: "GreyQo-Regular";
   margin-bottom: 20px;
   border-bottom: 2px #fff solid;
+  text-align: end;
+  line-height: 1.5;
 `;
 export const Images = styled.img`
   border-radius: 30px;
   margin-right: 20px;
   border: 3px #fff solid;
   width: 400px;
-  height: 320px;
-  object-fit: contain;
+  height: 220px;
 `;
 export const Text = styled.p`
-  font-size: 20px;
+  text-align: end;
+  margin-right: 20px;
 `;
-export const Description = styled.p``;
-export const Link = styled.a``;
-export const LinkGithub = styled.a``;
+export const Description = styled.p`
+  line-height: 1.8;
+  align-items: start;
+  margin-bottom: 20px;
+`;
 export const Span = styled.span`
-  font-size: 25px;
+  font-family: "FixelDisplay-Medium";
+
+  font-weight: 500px;
 `;
-export const Svg = styled.svg`
-  stroke: #fff;
-  fill: transparent;
+
+export const Div = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    margin-right: 20px;
+  }
+  a:last-child {
+    margin-right: 0px;
+  }
+`;
+export const TextTechnologies = styled.p`
+  font-size: 15px;
+  span {
+    font-size: 18px;
+  }
 `;

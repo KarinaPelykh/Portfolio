@@ -12,17 +12,22 @@ import {
   Item,
   ItemLanguages,
   ItemEducation,
+  MyIMage,
 } from "./AboutMe.styled";
-
+import myPhoto from "../../images/my-photo.png";
 import { dataHardSkill } from "../../assets/data/technologes";
 export const AboutME = () => {
   return (
     <>
       <Section>
         <Wrapper>
-          <Text>hi there, I&lsquo;m </Text>
-          <TextName>Karyna Pelykh</TextName>
-          <img />
+          <div>
+            {" "}
+            <Text>hi there, I&lsquo;m </Text>
+            <TextName>Karyna Pelykh</TextName>
+          </div>
+
+          <MyIMage src={myPhoto} alt="My photo" />
         </Wrapper>
       </Section>
       <SectionDescription>

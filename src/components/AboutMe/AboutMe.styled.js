@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 export const Section = styled.section`
   padding: 40px 20px;
   margin-top: 40px;
+  position: relative;
 `;
 export const SectionDescription = styled.section`
   display: flex;
@@ -126,4 +127,17 @@ export const ListEducation = styled.ul`
 `;
 export const Skills = styled.div`
   width: 500px;
+`;
+export const MyIMage = styled.img`
+  position: absolute;
+  bottom: 200px;
+  right: 0px;
+  z-index: -1;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+
+    bottom: -100px;
+    right: 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
 `;

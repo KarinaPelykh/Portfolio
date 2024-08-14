@@ -11,16 +11,45 @@ export const Modal = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  transform: translateX(100%);
+  transition: transform 3000ms ease-out;
+  &.open {
+    transform: translateX(0);
+  }
 `;
 export const Div = styled.div`
   width: 600px;
-  height: 350px;
-
-  background-color: #fcfcfc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px 20px;
+  height: 370px;
+  background-image: linear-gradient(to right, #e95ce9, #0cbaf1);
+  padding: 30px;
   border-radius: 30px;
 `;
+
+export const Button = styled.button`
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  svg {
+    fill: #fff;
+    stroke: #fff;
+  }
+`;
+export const Item = styled.li``;
+export const Title = styled.h2`
+  font-family: "GreyQo-Regular", serif;
+  margin-bottom: 10px;
+  line-height: 1.5;
+`;
+// export const Image = styled.img`
+//   border-radius: 15px;
+//   width: 520px;
+//   height: 260px;
+// `;
+// export const Svg = styled.svg`
+//   fill: #fff;
+// `;
+// export const WrapperLink = styled.div`
+//   margin-top: 10px;
+// `;

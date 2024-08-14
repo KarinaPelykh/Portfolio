@@ -43,6 +43,7 @@ export const MyProject = () => {
             linkProject,
             linkGithub,
             position,
+            technologies,
             description,
           }) => {
             return (
@@ -55,6 +56,7 @@ export const MyProject = () => {
                   linkProject={linkProject}
                   linkGithub={linkGithub}
                   position={position}
+                  technologies={technologies}
                   description={description}
                   handelToggle={handelToggle}
                 />
