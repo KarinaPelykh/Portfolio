@@ -3,7 +3,6 @@ import vrnas from "../../images/vrnas.png";
 import vrnas1 from "../../images/project/vrnas-1.png";
 import vrnas2 from "../../images/project/vrnas-2.png";
 import vrnas3 from "../../images/project/vrnas-3.png";
-import vrnas4 from "../../images/project/vrnas-4.png";
 import vrnas5 from "../../images/project/vrnas-5.png";
 
 // readJourney
@@ -36,7 +35,7 @@ export const slider = [
   },
   {
     id: 3,
-    item: [vrnas, vrnas1, vrnas2, vrnas3, vrnas4, vrnas5],
+    item: [vrnas, vrnas1, vrnas2, vrnas3, vrnas5],
     alt: "VRNas",
   },
   {

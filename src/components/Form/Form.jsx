@@ -25,27 +25,6 @@ export const Form = () => {
   };
   return (
     <>
-      {/* <ContactForm ref={form} onSubmit={sendEmail}>
-        <Label>
-          Name
-          <Input name="user_name" placeholder="Jordan Walke " type="text" />
-        </Label>
-        <Label>
-          Email
-          <Input
-            name="user_email"
-            placeholder="JordanWalke@gmail.com"
-            type="email"
-          />
-        </Label>
-        <Label>
-          Let`s me know if you want to cooperate
-          <Textarea name="message" placeholder="Hello...."></Textarea>
-          <Input name="message" placeholder="Hello...." type="text" />
-        </Label>
-        <Button type="submit">Send</Button>
-      </ContactForm> */}
-
       <ContactForm ref={form} onSubmit={sendEmail}>
         <Input name="user_name" placeholder="Jordan Walke " type="text" />
 

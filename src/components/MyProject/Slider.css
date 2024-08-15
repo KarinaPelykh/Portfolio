@@ -10,8 +10,14 @@
     color: #fff;
     font-size: 12px;
   }
+
   .swiper-slide {
     display: flex;
     justify-content: center;
+  }
+  @media screen and (min-width: 769px) {
+    .swiper-slide {
+      margin-right: 20px !important;
+    }
   }
 }

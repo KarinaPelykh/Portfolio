@@ -7,10 +7,7 @@ export const Item = styled.li`
   flex-direction: column;
   width: 1200px;
 `;
-export const Thumb = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+
 export const Title = styled.h1`
   font-size: 80px;
   font-family: "GreyQo-Regular";

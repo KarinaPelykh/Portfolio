@@ -3,13 +3,18 @@ import styled from "styled-components";
 export const Wrapper = styled.div``;
 export const List = styled.ul``;
 export const Item = styled.li`
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+  }
 `;
 export const Thumb = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: block;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 export const Title = styled.h1`
   font-size: 80px;

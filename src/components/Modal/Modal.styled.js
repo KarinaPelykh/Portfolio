@@ -12,7 +12,7 @@ export const Modal = styled.div`
   align-items: center;
   z-index: 9999;
   transform: translateX(100%);
-  transition: transform 3000ms ease-out;
+  transition: all 300ms ease-out;
   &.open {
     transform: translateX(0);
   }

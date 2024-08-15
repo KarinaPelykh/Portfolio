@@ -1,9 +1,27 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Headers = styled.header``;
 
-export const Nav = styled.nav``;
+export const Nav = styled.nav`
+  display: none;
+
+  ${({ $variant }) =>
+    $variant === "menu" &&
+    css`
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      justify-content: center;
+      align-items: center;
+      a {
+        margin: 0 0 10px 0;
+      }
+    `}
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
 
 export const LinkNav = styled(NavLink)`
   position: relative;
