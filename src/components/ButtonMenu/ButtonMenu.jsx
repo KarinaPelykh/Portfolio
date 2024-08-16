@@ -6,6 +6,7 @@ export const ButtonMenu = () => {
   const [open, setOpen] = useState(false);
   const handelClose = () => {
     setOpen(!open);
+    document.body.style.overflow = "auto";
   };
   return (
     <>

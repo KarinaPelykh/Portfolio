@@ -9,9 +9,11 @@ export const Nav = styled.nav`
   ${({ $variant }) =>
     $variant === "menu" &&
     css`
+      font-size: 60px;
+      font-family: "GreyQo-Regular";
       display: flex;
       flex-direction: column;
-      color: #000;
+      color: #fff;
       justify-content: center;
       align-items: center;
       a {

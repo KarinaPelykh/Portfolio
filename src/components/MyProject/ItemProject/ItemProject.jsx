@@ -20,14 +20,17 @@ export const ItemProject = ({
   position,
   technologies,
   description,
+
   handelToggle,
 }) => {
   return (
     <>
       <Item onClick={() => handelToggle(id)}>
+        {" "}
         <Title>{title}</Title>
         <Thumb>
           <Images src={item} alt={alt} width={550} height={400} />
+
           <div>
             <Description>
               <Span> Description:</Span> {description}

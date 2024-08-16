@@ -13,7 +13,7 @@ export const SliderComponent = ({ handelToggle }) => {
     <Swiper
       className="slider "
       modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-      spaceBetween={1}
+      spaceBetween={20}
       slidesPerView={1}
       autoplay={{
         delay: 1,

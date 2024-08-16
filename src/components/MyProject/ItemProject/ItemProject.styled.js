@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div``;
-export const List = styled.ul``;
 export const Item = styled.li`
+  margin-bottom: 50px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 769px) {
     display: flex;
     flex-direction: column;
     width: 1200px;
-  }
-`;
-export const Thumb = styled.div`
-  display: block;
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 0px;
   }
 `;
 export const Title = styled.h1`
@@ -24,16 +20,36 @@ export const Title = styled.h1`
   text-align: end;
   line-height: 1.5;
 `;
+
+export const Thumb = styled.div`
+  display: block;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
+`;
+
 export const Images = styled.img`
   border-radius: 30px;
-  margin-right: 20px;
   border: 3px #fff solid;
   width: 400px;
-  height: 220px;
+  height: 200px;
+
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+    height: 220px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 0px;
+  }
 `;
 export const Text = styled.p`
   text-align: end;
-  margin-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
 `;
 export const Description = styled.p`
   line-height: 1.8;
@@ -50,11 +66,14 @@ export const Div = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  a {
-    margin-right: 20px;
-  }
-  a:last-child {
-    margin-right: 0px;
+
+  @media screen and (min-width: 768px) {
+    a {
+      margin-right: 20px;
+    }
+    a:last-child {
+      margin-right: 0px;
+    }
   }
 `;
 export const TextTechnologies = styled.p`

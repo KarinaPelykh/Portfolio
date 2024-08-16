@@ -4,16 +4,18 @@ export const Section = styled.section`
   padding: 40px 20px;
   margin-top: 40px;
   position: relative;
+  &.hidden {
+    overflow-x: hidden;
+  }
 `;
 export const Wrapper = styled.div`
-  margin-top: 100px;
+  margin-top: 150px;
   @media screen and (min-width: 400px) {
     margin-top: 300px;
   }
 `;
 
 const grating = keyframes`
-
 
 0% {
     content: "h";
@@ -109,7 +111,11 @@ export const MyIMage = styled.img`
   z-index: -1;
   animation: ${s} 800ms linear both;
   animation-delay: ${({ $delay }) => $delay || "0s"};
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+  -webkit-box-shadow: 35px 31px 46px -4px rgba(97, 14, 97, 0.83);
+  -moz-box-shadow: 35px 31px 46px -4px rgba(97, 14, 97, 0.83);
+  box-shadow: 35px 31px 46px -4px rgba(97, 14, 97, 0.83);
+  border-bottom-right-radius: 20px;
   @media screen and (min-width: 768px) {
     width: 500px;
     right: -30px;
@@ -124,52 +130,21 @@ export const SectionDescription = styled.section`
   padding: 40px 20px;
 `;
 
-const title = keyframes`
-
-from{
-  transform:translateX(0)
-}
-to{
-  transform:translateX(80%)
-}`;
-
 export const Title = styled.h2`
   font-size: 30px;
   margin-bottom: 30px;
-  /* animation: ${title} 500ms linear both;
-  animation-timeline: scroll(); */
 `;
-const rotate = keyframes`
-
-from{
-  opacity: 0
-}
-to{
-  opacity:1
-}`;
 
 export const TextDescription = styled.p`
   text-align: center;
   line-height: 1.5;
-  animation: ${rotate} linear both;
+
   @media screen and (min-width: 1440px) {
     font-size: 20px;
 
     width: 800px;
   }
-
-  /* animation-timeline: view();
-  animation-range: entry 50% cover 30%; */
 `;
-
-const hied = keyframes`
-
-from{
-  transform:translateX(100%)
-}
-to{
-  transform:translateX(0)
-}`;
 
 export const List = styled.ul`
   border-bottom: 2px #fff solid;
@@ -184,27 +159,13 @@ export const List = styled.ul`
   }
 `;
 export const Item = styled.li`
-  animation: ${hied} 500ms linear both;
-  /* animation-timeline: view();
-  animation-range: entry 50% cover 30%; */
-
   font-size: 30px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
   }
 `;
-const itemLanguages = keyframes`
-
-from{
-  transform:translateX(100%)
-}
-to{
-  transform:translateX(0)
-}`;
 export const ItemLanguages = styled.li`
-  animation: ${itemLanguages} 500ms linear both;
-  /* animation-timeline: scroll(); */
   font-size: 30px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
@@ -217,7 +178,6 @@ export const ListLanguages = styled.ul`
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     li {
       margin-bottom: 40px;
@@ -227,23 +187,8 @@ export const ListLanguages = styled.ul`
     }
   }
 `;
-const itemEducation = keyframes`
 
-
-from{
-  transform:translateX(100%)
-}
-to{
-  transform:translateX(0)
-}`; /* from{
-  transform:translateX(0)
-}
-to{
-  transform:translateX(40%)
-}`; */
 export const ItemEducation = styled.li`
-  animation: ${itemEducation} 500ms linear both;
-  /* animation-timeline: scroll(); */
   font-size: 30px;
   display: flex;
   flex-direction: column;

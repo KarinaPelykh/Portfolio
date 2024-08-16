@@ -1,5 +1,5 @@
 import { data } from "../../assets/data/project";
-import { Div, Modal, Button, Item, Title } from "./Modal.styled";
+import { Div, Modal, Button, Title } from "./Modal.styled";
 import icon from "../../images/sprite.svg";
 import { SliderImages } from "../SliderImages/SliderImages";
 import { LinkOnNetwork } from "../LinkOnNetwork/LinkOnNetwork";
@@ -9,16 +9,23 @@ export const ModalWindow = ({ onClick, open, id }) => {
   const handleClose = (e) => {
     if (e.target === e.currentTarget) {
       onClick();
+      document.body.style.overflow = "auto";
     }
   };
 
   useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    }
     const handleCloseOnClick = (e) => {
       if (e.code === "Escape") {
         onClick();
+        document.body.style.overflow = "auto";
       }
     };
+
     document.addEventListener("keydown", handleCloseOnClick);
+
     () => {
       document.removeEventListener("keydown", handleCloseOnClick);
     };
@@ -37,7 +44,7 @@ export const ModalWindow = ({ onClick, open, id }) => {
             {data
               .filter((el) => el.id === id)
               .map(({ id, title, linkProject, linkGithub }) => (
-                <Item key={id}>
+                <li key={id}>
                   <Title>{title}</Title>
 
                   <SliderImages id={id} />
@@ -47,7 +54,7 @@ export const ModalWindow = ({ onClick, open, id }) => {
                     height={30}
                     width={30}
                   />
-                </Item>
+                </li>
               ))}
           </ul>
         </Div>

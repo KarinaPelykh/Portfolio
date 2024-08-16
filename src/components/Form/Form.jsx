@@ -8,9 +8,11 @@ export const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const info = form.current.user_name.value !== "" && form.current;
+    console.log(info);
 
     emailjs
-      .sendForm("service_57s60hj", "template_b0q6cxh", form.current, {
+      .sendForm("service_57s60hj", "template_b0q6cxh", info, {
         publicKey: "BVYL7WJKUFpgBNLir",
       })
       .then(
@@ -18,7 +20,7 @@ export const Form = () => {
           toast.success("Message sent");
         },
         (error) => {
-          toast.error("FAILED...", error.text);
+          toast.error("Fill in the field...", error.text);
         }
       );
     form.current.reset();

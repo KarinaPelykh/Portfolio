@@ -50,7 +50,7 @@ export const AboutME = () => {
           opportunities and excited to become a valuable member of your team.
         </TextDescription>
       </SectionDescription>
-      <Section>
+      <Section className="hidden">
         <Title data-aos="fade-down"> 01 Hard skills</Title>
         <List data-aos="zoom-in-right">
           {dataHardSkill.map(({ id, item }) => {
@@ -58,7 +58,7 @@ export const AboutME = () => {
           })}
         </List>
       </Section>
-      <Section data-aos="slide-left">
+      <Section className="hidden" data-aos="slide-left">
         <Title data-aos="fade-down"> 02 Languages</Title>
         <ListLanguages>
           <ItemLanguages>Ukrainian - Native</ItemLanguages>
@@ -66,7 +66,7 @@ export const AboutME = () => {
           <ItemLanguages>English - Pre-intermediate</ItemLanguages>
         </ListLanguages>
       </Section>
-      <Section data-aos="slide-right">
+      <Section className="hidden" data-aos="slide-right">
         <Title data-aos="fade-down"> 03 Education</Title>
         <ListEducation>
           <ItemEducation>

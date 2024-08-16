@@ -54,18 +54,5 @@ export const Button = styled.button`
     width: 300px;
     border-radius: 100%;
     height: 300px;
-    transition-property: transform, background-image;
-    transition-timing-function: linear;
-    transition-delay: 500ms;
-  }
-
-  &:hover {
-    color: #fff;
-    background-image: linear-gradient(
-      to right,
-      #fc00ff 0%,
-      #00dbde 51%,
-      #fc00ff 100%
-    );
   }
 `;

@@ -11,6 +11,12 @@ export const Menu = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 555;
+  transform: translateX(-100%);
+  transition: transform 250ms ease;
+
+  &.open {
+    transform: translateX(0%);
+  }
 `;
 export const Div = styled.div`
   position: absolute;
@@ -18,7 +24,7 @@ export const Div = styled.div`
   left: 0;
   width: 50vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #141414;
 `;
 export const Button = styled.button`
   background-color: transparent;
@@ -27,7 +33,7 @@ export const Button = styled.button`
   justify-content: center;
   margin-bottom: 10px;
   svg {
-    fill: #000;
-    stroke: #000;
+    fill: #fff;
+    stroke: #fff;
   }
 `;

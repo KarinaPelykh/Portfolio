@@ -47,13 +47,6 @@ img {
   font-weight: 500;
 }
 @font-face {
-  font-family: "FixelDisplay-SemiBold";
-  src: url("./fonts/FixelDisplay-SemiBold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 600;
-}
-
-@font-face {
   font-family: "GreyQo-Regular";
   src: url("./fonts/GreyQo-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -74,4 +67,19 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+button {
+  transition-property: transform, background-image;
+  transition-timing-function: linear;
+  transition-delay: 500ms;
+}
+button:hover {
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #fc00ff 0%,
+    #00dbde 51%,
+    #fc00ff 100%
+  );
 }

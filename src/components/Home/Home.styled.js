@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import gh from "../../images/gh-8.jpg";
 
 export const Div = styled.div`
   width: 100vw;
@@ -8,91 +9,104 @@ export const Div = styled.div`
   left: 0;
   margin: 0;
   padding: 0;
+  background-image: url(${gh});
+  @media screen and (max-width: 1200px) {
+    background-size: cover;
+  }
 `;
-export const Section = styled.section`
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-`;
-const text = keyframes`
 
-0% {
+const text = keyframes`
+  0% {
     content: "F";
   }
-  8% {
+  5.88% {
     content: "Fd";
-  }10% {
+  }
+  11.76% {
     content: "F";
   }
-  15% {
+  17.64% {
     content: "Fs";
   }
-  19% {
+  23.52% {
     content: "F";
   }
-    20% {
+  29.40% {
     content: "Fr";
   }
-  25% {
+  35.28% {
     content: "Fro";
   }
-  30% {
+  41.16% {
     content: "Fron";
   }
-  40% {
+  47.04% {
     content: "Front";
   }
-  54% {
+  52.92% {
     content: "Fronted ";
   }
-
-  68% {
+  58.80% {
     content: "Fronted   D";
   }
-  69% {
+  64.68% {
     content: "Fronted   De";
   }
-  72% {
-    content: " Fronted   Dev";
+  70.56% {
+    content: "Fronted   Dev";
   }
- 76% {
+  76.44% {
     content: "Fronted   Deve";
   }
-  80% {
+  82.32% {
     content: "Fronted   Devel";
   }
-  94% {
+  88.20% {
     content: "Fronted   Develo";
   }
- 96%{
+  94.08% {
     content: "Fronted   Develop";
-  } 98% {
-    content: "Fronted   Develope";
-  }100% {
+  }
+  100% {
     content: "Fronted   Developer";
   }
- 
 `;
+
 export const Text = styled.p`
-  font-size: 50px;
-  margin-right: 20px;
+  font-size: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+    margin-right: 20px;
+  }
+`;
+
+export const TextVerb = styled.p`
+  font-size: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
 `;
 export const TextAnim = styled.span`
-  font-size: 100px;
-  height: 100px;
-  width: 500px;
   font-family: "GreyQo-Regular";
   position: relative;
+  font-size: 70px;
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 0;
-    display: block;
-    width: 100%;
+    top: -10px;
+    left: 0px;
+    display: inline;
+    width: 500px;
     animation: ${text} 7.5s linear 1;
     animation-fill-mode: forwards;
+
+    @media screen and (min-width: 768px) {
+      top: -70px;
+      left: 20px;
+      font-size: 100px;
+    }
   }
 `;
 export const Button = styled.button`
@@ -101,4 +115,22 @@ export const Button = styled.button`
   border-radius: 30px;
   border-color: transparent;
   width: 300px;
+`;
+
+export const Wrapper = styled.div`
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+export const WrapperText = styled.div`
+  width: 100%;
+  height: 180px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
 `;
