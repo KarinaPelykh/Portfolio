@@ -127,8 +127,9 @@ export const Wrapper = styled.div`
 `;
 export const WrapperText = styled.div`
   width: 100%;
-  /* height: 180px; */
+  height: 180px;
   @media screen and (min-width: 768px) {
+    height: auto;
     display: flex;
     justify-content: start;
     align-items: center;

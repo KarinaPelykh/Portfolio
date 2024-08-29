@@ -78,7 +78,7 @@ export const AboutME = () => {
           </ItemEducation>
           <ItemEducation>
             <EDInstitution>IT School GoIT</EDInstitution>
-            <Span>Specialty: Front-nend Dev</Span>
+            <Span>Specialty: Front-end Dev</Span>
             <p>May 2023 - August 2023</p>
           </ItemEducation>
         </ListEducation>

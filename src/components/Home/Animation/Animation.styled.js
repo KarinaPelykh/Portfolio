@@ -18,7 +18,7 @@ export const Text = styled.p`
 
   animation: ${e} 20s linear 1;
   animation-iteration-count: infinite;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     font-size: 150px;
   }
 `;
