@@ -99,7 +99,7 @@ export const TextAnim = styled.span`
     left: 0px;
     display: inline;
     width: 500px;
-    animation: ${text} 7.5s linear 1;
+    animation: ${text} 3.5s linear 1;
     animation-fill-mode: forwards;
 
     @media screen and (min-width: 768px) {
@@ -127,7 +127,7 @@ export const Wrapper = styled.div`
 `;
 export const WrapperText = styled.div`
   width: 100%;
-  height: 180px;
+  /* height: 180px; */
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: start;
