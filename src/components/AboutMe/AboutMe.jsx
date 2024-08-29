@@ -24,7 +24,8 @@ import AOS from "aos";
 export const AboutME = () => {
   useEffect(() => {
     AOS.init({
-      duration: 600,
+      duration: 1500,
+      easing: "ease-in-out-cubic",
     });
   });
   return (
@@ -58,7 +59,7 @@ export const AboutME = () => {
           })}
         </List>
       </Section>
-      <Section className="hidden" data-aos="slide-left">
+      <Section className="hidden" data-aos="fade-down">
         <Title data-aos="fade-down"> 02 Languages</Title>
         <ListLanguages>
           <ItemLanguages>Ukrainian - Native</ItemLanguages>
@@ -66,7 +67,7 @@ export const AboutME = () => {
           <ItemLanguages>English - Pre-intermediate</ItemLanguages>
         </ListLanguages>
       </Section>
-      <Section className="hidden" data-aos="slide-right">
+      <Section className="hidden" data-aos="fade-down">
         <Title data-aos="fade-down"> 03 Education</Title>
         <ListEducation>
           <ItemEducation>
