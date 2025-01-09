@@ -64,7 +64,7 @@ export const AboutME = () => {
         <ListLanguages>
           <ItemLanguages>Ukrainian - Native</ItemLanguages>
           <ItemLanguages>Czech - Intermediate</ItemLanguages>
-          <ItemLanguages>English - Pre-intermediate</ItemLanguages>
+          <ItemLanguages>English - Intermediate</ItemLanguages>
         </ListLanguages>
       </Section>
       <Section className="hidden" data-aos="fade-down">
